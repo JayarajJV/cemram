@@ -27,7 +27,15 @@ woc = st.session_state['woc']
 md = st.session_state['md']
 df = st.session_state['df']
 
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
 
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+st.markdown("<style> ul {display: none;} </style>", unsafe_allow_html=True)
 
 st.title(str(well_name) + " - "+ str(od)+"INCH CEMENTING PROGRAMME")
 st.header("OBJECTIVE : TO CEMENT "+str(od)+" INCH CASING/LINER")
