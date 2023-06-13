@@ -3,7 +3,15 @@ import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import numpy as np
 
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
 
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+st.markdown("<style> ul {display: none;} </style>", unsafe_allow_html=True)
 total_slurry_needed = 52
 pump_out = 0.084
 displacement_fluid = 112.8
