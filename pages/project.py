@@ -1,12 +1,10 @@
 import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
-logo = "https://github.com/JVJayarah3/cementing-one/blob/main/images/kirilogo.png?raw=true"
+
 col1,col2 = st.columns([5,2])
 with col1:
   st.header("CEMENTING-ONE")
-with col2:
-  st.image(logo)
 
 
 
