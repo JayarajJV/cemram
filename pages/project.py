@@ -1,7 +1,15 @@
 import streamlit as st
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
 
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+st.markdown("<style> ul {display: none;} </style>", unsafe_allow_html=True)
 col1,col2 = st.columns([5,2])
 with col1:
   st.header("CEMENTING-ONE")
